@@ -6,146 +6,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>LiveGood Punta Cana | Salud y Negocio</title>
+<title>LiveGood Punta Cana | Salud y Bienestar</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:"Poppins",sans-serif;
-}
-
-body{
-background:#f6f9fb;
-color:#333;
-}
-
-header{
-background:linear-gradient(135deg,#0a7c6d,#12c3a4);
-color:white;
-padding:90px 20px;
-text-align:center;
-}
-
-header h1{
-font-size:46px;
-margin-bottom:10px;
-}
-
-header p{
-font-size:18px;
-margin-bottom:25px;
-}
-
-.btn{
-display:inline-block;
-background:#0a7c6d;
-color:white;
-padding:14px 28px;
-border-radius:40px;
-text-decoration:none;
-font-weight:600;
-margin:8px;
-transition:0.3s;
-}
-
-.btn:hover{
-background:#064f45;
-transform:scale(1.05);
-}
-
-.section{
-padding:80px 20px;
-text-align:center;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-max-width:1200px;
-margin:auto;
-}
-
-.card{
-background:white;
-border-radius:14px;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-padding:20px;
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card img{
-width:100%;
-border-radius:10px;
-}
-
-.card h3{
-margin:15px 0;
-font-size:20px;
-}
-
-.card p{
-font-size:14px;
-}
-
-.video{
-max-width:850px;
-margin:auto;
-}
-
-.testimonials{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-max-width:1000px;
-margin:auto;
-}
-
-.testimonial{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 8px 20px rgba(0,0,0,0.08);
-}
-
-.leads input{
-padding:12px;
-margin:10px;
-width:260px;
-border-radius:8px;
-border:1px solid #ddd;
-}
-
-footer{
-background:#0a7c6d;
-color:white;
-padding:40px;
-text-align:center;
-}
-
-.whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-color:white;
-font-size:26px;
-padding:18px;
-border-radius:50%;
-text-decoration:none;
-box-shadow:0 8px 20px rgba(0,0,0,0.25);
-}
-
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
 
@@ -157,54 +22,47 @@ box-shadow:0 8px 20px rgba(0,0,0,0.25);
 
 <p>Salud Natural • Energía • Oportunidad de Ingresos</p>
 
-<a class="btn" href="https://wa.me/18094078708">WhatsApp</a>
+<div class="buttons">
 
-<a class="btn" href="https://www.facebook.com/profile.php?id=61582201169211">Facebook</a>
+<a href="https://wa.me/18094078708">WhatsApp</a>
 
-<a class="btn" href="https://share.google/zkoRk1dAvqt89X3xZ">Google</a>
+<a href="https://www.facebook.com/profile.php?id=61582201169211">Facebook</a>
+
+<a href="https://share.google/zkoRk1dAvqt89X3xZ">Google</a>
+
+</div>
 
 </header>
 
-<section class="section">
+
+<section class="video">
 
 <h2>Descubre LiveGood</h2>
 
-<div class="video">
-
-<iframe width="100%" height="450"
+<iframe width="100%" height="400"
 src="https://www.youtube.com/embed/0oX7F9xP5uY"
-title="LiveGood"
 frameborder="0"
 allowfullscreen>
 </iframe>
 
-</div>
-
-<p style="margin-top:20px">
-
-Suplementos premium con ingredientes naturales que ayudan a mejorar tu
-energía, digestión, sistema inmunológico y bienestar diario.
-
-</p>
-
 </section>
 
-<section class="section">
+
+<section class="products">
 
 <h2>Productos Populares</h2>
 
-<div class="products">
+<div class="grid">
 
 <div class="card">
 
-<img src="https://cdn.shopify.com/s/files/1/0073/5820/7911/products/supergreens.jpg">
+<img src="images/supergreens.jpg">
 
 <h3>Super Greens</h3>
 
 <p>Detox natural y energía diaria.</p>
 
-<a class="btn"
-href="https://wa.me/18094078708?text=Quiero%20informacion%20sobre%20Super%20Greens">
+<a href="https://wa.me/18094078708?text=Quiero%20informacion%20sobre%20Super%20Greens">
 Comprar
 </a>
 
@@ -212,14 +70,13 @@ Comprar
 
 <div class="card">
 
-<img src="https://cdn.shopify.com/s/files/1/0073/5820/7911/products/superreds.jpg">
+<img src="images/superreds.jpg">
 
 <h3>Super Reds</h3>
 
 <p>Apoya circulación y salud cardiovascular.</p>
 
-<a class="btn"
-href="https://wa.me/18094078708?text=Quiero%20informacion%20sobre%20Super%20Reds">
+<a href="https://wa.me/18094078708?text=Quiero%20informacion%20sobre%20Super%20Reds">
 Comprar
 </a>
 
@@ -227,14 +84,13 @@ Comprar
 
 <div class="card">
 
-<img src="https://cdn.shopify.com/s/files/1/0073/5820/7911/products/organiccoffee.jpg">
+<img src="images/coffee.jpg">
 
 <h3>Organic Coffee</h3>
 
-<p>Energía y enfoque natural.</p>
+<p>Energía y concentración.</p>
 
-<a class="btn"
-href="https://wa.me/18094078708?text=Quiero%20informacion%20sobre%20Organic%20Coffee">
+<a href="https://wa.me/18094078708?text=Quiero%20informacion%20sobre%20Coffee">
 Comprar
 </a>
 
@@ -242,14 +98,13 @@ Comprar
 
 <div class="card">
 
-<img src="https://cdn.shopify.com/s/files/1/0073/5820/7911/products/magnesium.jpg">
+<img src="images/magnesium.jpg">
 
-<h3>Ultra Magnesium</h3>
+<h3>Magnesium</h3>
 
-<p>Relajación muscular y mejor descanso.</p>
+<p>Relajación muscular y descanso.</p>
 
-<a class="btn"
-href="https://wa.me/18094078708?text=Quiero%20informacion%20sobre%20Magnesium">
+<a href="https://wa.me/18094078708?text=Quiero%20informacion%20sobre%20Magnesium">
 Comprar
 </a>
 
@@ -257,14 +112,13 @@ Comprar
 
 <div class="card">
 
-<img src="https://cdn.shopify.com/s/files/1/0073/5820/7911/products/multivitamin.jpg">
+<img src="images/multivitamin.jpg">
 
 <h3>Multivitamin</h3>
 
-<p>Vitaminas completas para energía.</p>
+<p>Vitaminas completas.</p>
 
-<a class="btn"
-href="https://wa.me/18094078708?text=Quiero%20informacion%20sobre%20Multivitamin">
+<a href="https://wa.me/18094078708?text=Quiero%20informacion%20sobre%20Multivitamin">
 Comprar
 </a>
 
@@ -272,14 +126,13 @@ Comprar
 
 <div class="card">
 
-<img src="https://cdn.shopify.com/s/files/1/0073/5820/7911/products/plantprotein.jpg">
+<img src="images/protein.jpg">
 
 <h3>Plant Protein</h3>
 
 <p>Proteína vegetal completa.</p>
 
-<a class="btn"
-href="https://wa.me/18094078708?text=Quiero%20informacion%20sobre%20Protein">
+<a href="https://wa.me/18094078708?text=Quiero%20informacion%20sobre%20Protein">
 Comprar
 </a>
 
@@ -289,74 +142,20 @@ Comprar
 
 </section>
 
-<section class="section">
-
-<h2>Testimonios</h2>
-
-<div class="testimonials">
-
-<div class="testimonial">
-
-<p>
-“Después de usar Super Greens tengo más energía cada día.”
-</p>
-
-<strong>Cliente LiveGood</strong>
-
-</div>
-
-<div class="testimonial">
-
-<p>
-“El café orgánico me ayuda a concentrarme sin ansiedad.”
-</p>
-
-<strong>Usuario</strong>
-
-</div>
-
-<div class="testimonial">
-
-<p>
-“Excelente calidad y precios más bajos que otras marcas.”
-</p>
-
-<strong>Cliente</strong>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section leads">
-
-<h2>Recibe Promociones</h2>
-
-<input type="text" placeholder="Nombre">
-
-<input type="email" placeholder="Correo">
-
-<br>
-
-<a class="btn"
-href="https://wa.me/18094078708?text=Quiero%20recibir%20ofertas%20LiveGood">
-Registrarme
-</a>
-
-</section>
 
 <footer>
 
-<h3>LiveGood Punta Cana</h3>
+<p>LiveGood Punta Cana</p>
 
 <p>WhatsApp: +1 809 407 8708</p>
 
-<p>Síguenos en Facebook para promociones</p>
-
 </footer>
 
-<a class="whatsapp" href="https://wa.me/18094078708">💬</a>
+
+<a class="whatsapp" href="https://wa.me/18094078708">
+💬
+</a>
 
 </body>
+
 </html>
