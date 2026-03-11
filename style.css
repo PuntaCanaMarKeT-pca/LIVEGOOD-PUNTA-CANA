@@ -1,0 +1,110 @@
+body{
+
+font-family:Poppins;
+margin:0;
+background:#f5f7fb;
+
+}
+
+header{
+
+background:linear-gradient(135deg,#0a7c6d,#12c3a4);
+color:white;
+text-align:center;
+padding:80px 20px;
+
+}
+
+header h1{
+
+font-size:42px;
+
+}
+
+.buttons a{
+
+background:white;
+color:#0a7c6d;
+padding:12px 20px;
+margin:10px;
+display:inline-block;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+
+}
+
+.video{
+
+padding:60px 20px;
+text-align:center;
+
+}
+
+.products{
+
+padding:60px 20px;
+text-align:center;
+
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+
+}
+
+.card{
+
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+}
+
+.card img{
+
+width:100%;
+border-radius:10px;
+
+}
+
+.card a{
+
+display:inline-block;
+background:#0a7c6d;
+color:white;
+padding:10px 20px;
+margin-top:10px;
+border-radius:20px;
+text-decoration:none;
+
+}
+
+footer{
+
+background:#0a7c6d;
+color:white;
+text-align:center;
+padding:30px;
+
+}
+
+.whatsapp{
+
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:18px;
+border-radius:50%;
+text-decoration:none;
+font-size:24px;
+
+}
