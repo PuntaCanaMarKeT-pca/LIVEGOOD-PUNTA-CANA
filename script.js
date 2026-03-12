@@ -1,19 +1,46 @@
-const track=document.querySelector(".carousel-track");
+// LANGUAGE DETECTION
 
-let position=0;
+const lang = navigator.language || navigator.userLanguage;
 
-document.querySelector(".next").onclick=()=>{
+const translations = {
 
-position-=300;
+es: {
+title:"LIVEGOOD Punta Cana",
+subtitle:"Suplementos Premium • Salud Natural • Oportunidad de Ingresos",
+heroTitle:"Vive Mejor con LIVEGOOD",
+heroText:"Suplementos naturales de alta calidad a precios accesibles.",
+featured:"Productos Destacados",
+catalog:"Catálogo LIVEGOOD",
+businessTitle:"Gana Dinero con LIVEGOOD",
+businessText:"Únete como afiliado y crea ingresos recomendando productos."
+},
 
-track.style.transform=`translateX(${position}px)`;
+en: {
+title:"LIVEGOOD Punta Cana",
+subtitle:"Premium Supplements • Natural Health • Income Opportunity",
+heroTitle:"Live Better with LIVEGOOD",
+heroText:"High quality natural supplements at affordable prices.",
+featured:"Featured Products",
+catalog:"LIVEGOOD Catalog",
+businessTitle:"Earn Money with LIVEGOOD",
+businessText:"Join as an affiliate and create income recommending products."
+}
 
 };
 
-document.querySelector(".prev").onclick=()=>{
+const language = lang.startsWith("es") ? "es" : "en";
 
-position+=300;
+document.getElementById("title").innerText = translations[language].title;
+document.getElementById("subtitle").innerText = translations[language].subtitle;
+document.getElementById("heroTitle").innerText = translations[language].heroTitle;
+document.getElementById("heroText").innerText = translations[language].heroText;
+document.getElementById("featured").innerText = translations[language].featured;
+document.getElementById("catalog").innerText = translations[language].catalog;
+document.getElementById("businessTitle").innerText = translations[language].businessTitle;
+document.getElementById("businessText").innerText = translations[language].businessText;
 
-track.style.transform=`translateX(${position}px)`;
 
-};
+// INFINITE CAROUSEL
+
+const track = document.querySelector(".carousel-track");
+track.innerHTML += track.innerHTML;
